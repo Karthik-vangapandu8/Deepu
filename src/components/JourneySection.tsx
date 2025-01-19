@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const journeySteps = [
   {
-    year: '2019',
+    year: '2022',
     title: 'The Beginning',
     subtitle: 'ANITS IT Department',
     description: 'Like every great story, mine began with a challenge. Not getting into IIT wasn\'t the end - it was my intermission, setting the stage for something greater.',
@@ -13,7 +13,7 @@ const journeySteps = [
     quote: '"Sometimes the best stories start with a setback"'
   },
   {
-    year: '2020',
+    year: '2023',
     title: 'Rising Star',
     subtitle: 'Leading the First Junior Team',
     description: 'Just as Savitri broke barriers in cinema, we broke through limitations. Leading the first junior team to SIH finals wasn\'t just an achievement - it was a statement.',
@@ -21,7 +21,7 @@ const journeySteps = [
     quote: '"Leadership isn\'t given, it\'s earned through courage"'
   },
   {
-    year: '2021',
+    year: '2024',
     title: 'The Breakthrough',
     subtitle: 'Business Combat Victory',
     description: 'Every protagonist has that defining moment. Mine came with the Business Combat victory, proving that technology and business acumen can create magic together.',
@@ -29,7 +29,7 @@ const journeySteps = [
     quote: '"Success is when preparation meets opportunity"'
   },
   {
-    year: '2022',
+    year: '2024',
     title: 'Data Storyteller',
     subtitle: 'Analytics & Visualization',
     description: 'Like a director crafting scenes, I learned to tell stories through data. Each visualization became a frame, each insight a powerful dialogue.',
@@ -37,7 +37,7 @@ const journeySteps = [
     quote: '"In data, we find the truth of our digital age"'
   },
   {
-    year: '2023',
+    year: '2025',
     title: 'Mission Rail-Go',
     subtitle: 'Current Chapter',
     description: 'Now, like those climactic scenes that keep you on the edge, I\'m writing the most exciting chapter yet. Rail-Go isn\'t just a project - it\'s a revolution in motion.',
