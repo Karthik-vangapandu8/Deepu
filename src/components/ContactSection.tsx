@@ -72,7 +72,7 @@ export const ContactSection = () => {
               THE FINAL SCENE
             </h2>
             <p className="text-4xl md:text-5xl text-white font-bold mb-6">
-              Let's Create <span className="text-gold">Magic Together</span>
+              Let&apos;s Create <span className="text-gold">Magic Together</span>
             </p>
             <p className="text-lg text-cream/80 mb-8">
               Let&apos;s create something extraordinary together
@@ -219,7 +219,7 @@ export const ContactSection = () => {
                                   ? 'bg-green-600 text-white' 
                                   : 'bg-gradient-to-r from-gold via-yellow-500 to-gold text-black hover:from-white hover:to-white transition-all'}`}
                     >
-                      {isMessageSent ? '✨ Message Sent! ✨' : 'Let\'s Begin Our Story'}
+                      {isMessageSent ? '✨ Message Sent! ✨' : 'Let&apos;s Begin Our Story'}
                     </motion.button>
                   </form>
                 </motion.div>
