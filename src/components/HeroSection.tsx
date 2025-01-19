@@ -1,27 +1,27 @@
 'use client'
 
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
-const letterAnimation = {
+const letterAnimation: Variants = {
   initial: { y: 100, opacity: 0, scale: 0.5, rotate: -30 },
   animate: { y: 0, opacity: 1, scale: 1, rotate: 0 },
 }
 
-const glowAnimation = {
+const glowAnimation: Variants = {
   initial: { opacity: 0 },
   animate: { 
     opacity: [0.3, 1, 0.3], 
     transition: {
       duration: 3,
       repeat: Infinity,
-      repeatType: "reverse"
+      repeatType: "reverse" as const
     }
   }
 }
 
-const imageVariants = {
+const imageVariants: Variants = {
   enter: {
     opacity: 0,
     scale: 1.2,
