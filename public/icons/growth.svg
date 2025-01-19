@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#FFA500"/>
+    </linearGradient>
+  </defs>
+  <path d="M8 56h48v-8H8v8zm4-4h40v2H12v-2z" fill="url(#gold-gradient)"/>
+  <path d="M16 48h8V32h-8v16zm2-14h4v12h-4V34z" fill="url(#gold-gradient)"/>
+  <path d="M28 48h8V24h-8v24zm2-22h4v20h-4V26z" fill="url(#gold-gradient)"/>
+  <path d="M40 48h8V16h-8v32zm2-30h4v28h-4V18z" fill="url(#gold-gradient)"/>
+  <path d="M32 8l-8 8h16l-8-8z" fill="url(#gold-gradient)"/>
+</svg>

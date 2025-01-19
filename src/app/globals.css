@@ -1,0 +1,355 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maroon: #800020;
+  --deep-maroon: #2C0A1A;
+  --gold: #FFD700;
+  --cream: #FFF5E1;
+  --vintage-black: #1a1a1a;
+  --sepia: #704214;
+}
+
+/* Dramatic Text Effects */
+.dramatic-text {
+  background: linear-gradient(to right, var(--gold) 20%, #FFA500 40%, #FFD700 60%, var(--gold) 80%);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shine 8s linear infinite;
+  text-shadow: 
+    0 0 10px rgba(255, 215, 0, 0.5),
+    0 0 20px rgba(255, 215, 0, 0.3),
+    0 0 30px rgba(255, 215, 0, 0.2);
+}
+
+.majestic-text {
+  background: linear-gradient(to right, #FFD700, #FDB931, #C6A55C, #FFD700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: majesty 6s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes majesty {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.elegant-text {
+  font-family: var(--font-great-vibes);
+  background: linear-gradient(120deg, var(--gold), #FFF8DC);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.royal-text {
+  font-family: var(--font-cinzel);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* 3D Text Effect */
+.text-3d {
+  text-shadow: 
+    0 1px 0 #ccc,
+    0 2px 0 #c9c9c9,
+    0 3px 0 #bbb,
+    0 4px 0 #b9b9b9,
+    0 5px 0 #aaa,
+    0 6px 1px rgba(0,0,0,.1),
+    0 0 5px rgba(0,0,0,.1),
+    0 1px 3px rgba(0,0,0,.3),
+    0 3px 5px rgba(0,0,0,.2),
+    0 5px 10px rgba(0,0,0,.25),
+    0 10px 10px rgba(0,0,0,.2),
+    0 20px 20px rgba(0,0,0,.15);
+}
+
+/* Sparkle Animation */
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.sparkle {
+  position: relative;
+}
+
+.sparkle::before,
+.sparkle::after {
+  content: '✨';
+  position: absolute;
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.sparkle::before {
+  left: -20px;
+  top: -10px;
+  animation-delay: 0.5s;
+}
+
+.sparkle::after {
+  right: -20px;
+  bottom: -10px;
+  animation-delay: 1s;
+}
+
+/* Film Reel Animation */
+@keyframes filmReel {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-100%) rotate(360deg); }
+}
+
+/* Vintage Film Grain */
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  opacity: 0.05;
+}
+
+/* Cinematic Text Glow */
+.text-glow {
+  text-shadow: 0 0 10px var(--gold), 0 0 20px var(--gold), 0 0 30px var(--gold);
+}
+
+/* Vintage Border */
+.vintage-border {
+  border-image: linear-gradient(45deg, var(--gold), var(--sepia)) 1;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Mahanati Gradient */
+.mahanati-gradient {
+  background: linear-gradient(135deg, var(--maroon), var(--deep-maroon));
+}
+
+/* Decorative Frame */
+.decorative-frame {
+  position: relative;
+}
+
+.decorative-frame::before,
+.decorative-frame::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--gold);
+}
+
+.decorative-frame::before {
+  top: -10px;
+  left: -10px;
+  border-right: none;
+  border-bottom: none;
+}
+
+.decorative-frame::after {
+  bottom: -10px;
+  right: -10px;
+  border-left: none;
+  border-top: none;
+}
+
+/* Vintage Button */
+.vintage-button {
+  @apply relative overflow-hidden transition-all duration-300;
+  background: linear-gradient(45deg, var(--gold), var(--sepia));
+}
+
+.vintage-button::before {
+  content: '';
+  @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+  background: linear-gradient(45deg, var(--sepia), var(--gold));
+}
+
+.vintage-button:hover::before {
+  @apply opacity-100;
+}
+
+/* Film Strip */
+.film-strip {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 15px,
+    rgba(255, 215, 0, 0.1) 15px,
+    rgba(255, 215, 0, 0.1) 16px
+  );
+}
+
+/* Floating Elements */
+@keyframes floatAnimation {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.float {
+  animation: floatAnimation 6s ease-in-out infinite;
+}
+
+/* Spotlight Effect */
+.spotlight {
+  background: radial-gradient(circle at 50% 50%, rgba(255, 215, 0, 0.1) 0%, transparent 60%);
+}
+
+/* Vintage Photo Filter */
+.vintage-filter {
+  filter: sepia(30%) brightness(90%) contrast(110%);
+}
+
+/* Cinematic Transitions */
+.cinematic-fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Retro Typography */
+.retro-text {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.05em;
+}
+
+/* Golden Age Accents */
+.golden-accent {
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  height: 1px;
+}
+
+/* Vintage Card */
+.vintage-card {
+  @apply relative overflow-hidden rounded-lg p-6;
+  background: linear-gradient(135deg, rgba(44, 10, 26, 0.9), rgba(26, 26, 26, 0.9));
+  backdrop-filter: blur(10px);
+}
+
+.vintage-card::before {
+  content: '';
+  @apply absolute inset-0;
+  background: linear-gradient(45deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s;
+}
+
+.vintage-card:hover::before {
+  transform: translateX(100%);
+}
+
+/* Custom Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-clip-text text-transparent;
+  background: linear-gradient(135deg, var(--gold), #FFA500, var(--cream));
+  background-size: 200% auto;
+  animation: shine 3s linear infinite;
+}
+
+/* Cinematic Effects */
+@layer utilities {
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%' height='100%' filter='url(%23noise)'/%3E%3C/svg%3E");
+  }
+
+  .bg-radial-vignette {
+    background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  }
+}
+
+/* Floating Quotes Animation */
+@keyframes floatUp {
+  0% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.1;
+  }
+  90% {
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+.floating-quotes {
+  animation: floatUp 20s linear infinite;
+}
+
+/* Custom Components */
+@layer components {
+  .primary-button {
+    @apply px-8 py-3 bg-gradient-to-r from-gold to-[#FFA500] text-maroon
+           rounded-full font-bold text-lg transition-transform duration-300
+           hover:scale-105 hover:shadow-lg hover:shadow-gold/20
+           focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2
+           focus:ring-offset-maroon;
+  }
+
+  .secondary-button {
+    @apply px-8 py-3 border-2 border-gold/50 text-gold rounded-full
+           font-bold text-lg transition-all duration-300
+           hover:border-gold hover:bg-gold/10
+           focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2
+           focus:ring-offset-maroon;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FFD700, #B8860B);
+  border-radius: 4px;
+}
+
+/* Text Selection */
+::selection {
+  background: rgba(255, 215, 0, 0.3);
+  color: #FFD700;
+}
+
+/* Global Transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--vintage-black)] text-cream antialiased;
+  }
+}
