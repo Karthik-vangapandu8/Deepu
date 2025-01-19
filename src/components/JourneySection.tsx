@@ -80,8 +80,8 @@ export const JourneySection = () => {
           <p className="text-4xl md:text-5xl text-white font-bold mb-6">
             Chapters of <span className="text-gold">Growth</span>
           </p>
-          <p className="text-xl text-cream/80 italic max-w-2xl mx-auto">
-            "Every journey has its turning points, every story its moments of truth"
+          <p className="text-center text-lg text-cream/80 mb-12">
+            &ldquo;Every frame of life is a story waiting to be told with grace and determination&rdquo;
           </p>
         </motion.div>
 

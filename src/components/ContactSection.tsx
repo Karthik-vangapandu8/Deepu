@@ -74,8 +74,11 @@ export const ContactSection = () => {
             <p className="text-4xl md:text-5xl text-white font-bold mb-6">
               Let's Create <span className="text-gold">Magic Together</span>
             </p>
-            <p className="text-xl text-cream/80 italic max-w-2xl mx-auto">
-              "In the world of technology, every connection is a chance to write a new story"
+            <p className="text-lg text-cream/80 mb-8">
+              Let&apos;s create something extraordinary together
+            </p>
+            <p className="text-lg text-cream/80 mb-12">
+              &ldquo;In the world of technology, every connection is a chance to create magic&rdquo;
             </p>
           </motion.div>
         </motion.div>
@@ -137,7 +140,7 @@ export const ContactSection = () => {
                         <p className="text-cream/90 leading-relaxed">
                           From ANITS to creating impactful solutions, 
                           my journey is about turning challenges into opportunities. 
-                          Let's collaborate and create something extraordinary.
+                          Let&apos;s collaborate and bring your vision to life
                         </p>
                         
                         {/* Contact Links with Hover Effects */}
@@ -232,8 +235,8 @@ export const ContactSection = () => {
           viewport={{ once: true }}
           className="text-center mt-20"
         >
-          <p className="text-gold/60 font-serif italic text-xl mb-8">
-            "Every great achievement begins with a connection"
+          <p className="text-gold/60 font-serif italic text-lg mb-8">
+            &ldquo;Every great achievement starts with a conversation&rdquo;
           </p>
           <div className="flex justify-center gap-8">
             {[
